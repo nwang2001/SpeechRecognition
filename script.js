@@ -20,9 +20,8 @@ recognition.addEventListener('result', e => {
     if (e.results[0].isFinal) {
         p = document.createElement('p');
         words.appendChild(p);
-
     }
 })
 
-recognition.addEventListener('end', recognition.start());
-// recognition.start();
+recognition.addEventListener('end', recognition.start);
+recognition.start();
